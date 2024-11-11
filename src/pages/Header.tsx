@@ -77,13 +77,31 @@ export default function Header() {
 
         {/* mobile menu items */}
         <div className={classNames("sm:hidden", { hidden: !menuToggle })}>
-          <a href="#" className="block py-2 px-3 text-sm hover:bg-gray-200">
+          <a href="/home" className="block py-2 px-3 text-sm hover:bg-gray-200">
             Home
           </a>
-          <a href="#" className="block py-2 px-3 text-sm hover:bg-gray-200">
-            Gallery
+          <a
+            href="/about"
+            className="block py-2 px-3 text-sm hover:bg-gray-200"
+          >
+            About
           </a>
-          <a href="#" className="block py-2 px-3 text-sm hover:bg-gray-200">
+          <a
+            href="/portfolio"
+            className="block py-2 px-3 text-sm hover:bg-gray-200"
+          >
+            Portfolio
+          </a>
+          <a
+            href="/video"
+            className="block py-2 px-3 text-sm hover:bg-gray-200"
+          >
+            Video
+          </a>
+          <a
+            href="/contact"
+            className="block py-2 px-3 text-sm hover:bg-gray-200"
+          >
             Contact
           </a>
         </div>

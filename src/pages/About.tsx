@@ -3,7 +3,7 @@ export default function About() {
     <div className="max-w-6xl mx-auto mt-3">
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6">
         <div className="flex justify-center items-center">
-          <img src="./assets/images/me.jpg" />
+          <img src="./assets/images/me.jpg" alt="myPhoto" />
         </div>
         <div className="col-span-1 sm:col-span-1 md:col-span-2 flex items-center text-left">
           Hi there, My name is Younghye. I was born and grew up in Korea. I used
