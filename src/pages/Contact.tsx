@@ -15,9 +15,9 @@ export default function Contact() {
             else, <br />
             feel free to email me at
             <br />
-            <a className="text-xl font-bold underline decoration-indigo-500">
+            <span className="text-xl font-bold underline decoration-indigo-500">
               mdrdg117@yahoo.co.jp
-            </a>
+            </span>
           </p>
           <center className="mt-3">
             <a href="https://www.facebook.com/YQuilling">
