@@ -6,8 +6,8 @@ export default function Header() {
   const [menuToggle, setMenuToggle] = useState(false);
   return (
     <>
-      <nav className="relative z-10">
-        <div className="flex justify-between font-serif py-5 px-8 mb-4">
+      <nav className="sticky top-0 z-10 bg-white">
+        <div className="flex justify-between font-serif py-5 px-3 mb-4">
           <div className="flex items-center">
             <div>
               <a className="flex mr-24" href={"/home"}>

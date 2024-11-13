@@ -3,7 +3,7 @@ import { ImFacebook2 } from "react-icons/im";
 export default function Contact() {
   return (
     <>
-      <div className="flex justify-center items-center h-[73vh]">
+      <div className="flex justify-center items-center h-[63vh]">
         <div className="text-lg leading-loose">
           <p>
             If you have any inquiries about commissions, projects, or anything
