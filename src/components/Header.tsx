@@ -39,9 +39,9 @@ export default function Header() {
             onClick={() => setMenuToggle(!menuToggle)}
           >
             {menuToggle ? (
-              <FaTimes size={25} color="white" />
+              <FaTimes size={30} color="white" />
             ) : (
-              <RxHamburgerMenu size={25} />
+              <RxHamburgerMenu size={30} />
             )}
           </div>
         </div>

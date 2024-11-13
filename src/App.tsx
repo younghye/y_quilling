@@ -4,7 +4,7 @@ import Routes from "./components/Routes";
 
 export default function App() {
   return (
-    <div className="App max-w-6xl mx-auto px-7 mt-3">
+    <div className="App max-w-6xl mx-auto px-7 py-4">
       <Header />
       <Routes />
     </div>
