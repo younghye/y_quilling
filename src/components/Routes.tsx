@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes as Switch, Route } from "react-router-dom";
-import Home from "./Home";
-import Portfolio from "./Portfolio";
-import Video from "./Video";
-import Contact from "./Contact";
-import About from "./About";
-import NotFound from "./NotFound";
+import Home from "../pages/Home";
+import Portfolio from "../pages/Portfolio";
+import Video from "../pages/Video";
+import Contact from "../pages/Contact";
+import About from "../pages/About";
+import NotFound from "../pages/NotFound";
 
 export default function Routes() {
   return (

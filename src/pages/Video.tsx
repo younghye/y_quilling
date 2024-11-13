@@ -11,28 +11,27 @@ export default function Video() {
   const [index, setIndex] = useState<number>(-1);
   return (
     <>
-      <div className="max-w-6xl mx-auto mt-6">
-        <Masonry columns={{ 640: 1, 768: 2, 1024: 3 }} gap={15}>
-          {videos.map((video, index) => (
-            <div key={index} onClick={() => setIndex(index)}>
-              <video className="h-full w-full rounded-lg" controls>
-                <source
-                  src={video.sources[0].src}
-                  type={video.sources[0].type}
-                />
-              </video>
-            </div>
-          ))}
-        </Masonry>
-        <Lightbox
-          plugins={[Captions, VideoPlug]}
-          captions={{ descriptionTextAlign: "start" }}
-          index={index}
-          open={index >= 0}
-          close={() => setIndex(-1)}
-          slides={videos}
-        />
-      </div>
+      <Masonry
+        columns={{ 640: 1, 768: 2, 1024: 3 }}
+        gap={15}
+        className="relative z-0"
+      >
+        {videos.map((video, index) => (
+          <div key={index} onClick={() => setIndex(index)}>
+            <video className="rounded-lg" controls>
+              <source src={video.sources[0].src} type={video.sources[0].type} />
+            </video>
+          </div>
+        ))}
+      </Masonry>
+      <Lightbox
+        plugins={[Captions, VideoPlug]}
+        captions={{ descriptionTextAlign: "start" }}
+        index={index}
+        open={index >= 0}
+        close={() => setIndex(-1)}
+        slides={videos}
+      />
     </>
   );
 }

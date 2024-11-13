@@ -10,23 +10,21 @@ export default function Portfolio() {
   const [index, setIndex] = useState<number>(-1);
   return (
     <>
-      <div className="max-w-6xl mx-auto mt-3">
-        <Masonry columns={{ 640: 1, 768: 2, 1024: 3 }} gap={15}>
-          {images.map((image, index) => (
-            <div key={index} onClick={() => setIndex(index)}>
-              <img src={image.src} alt={image.description} />
-            </div>
-          ))}
-        </Masonry>
-        <Lightbox
-          plugins={[Captions]}
-          captions={{ descriptionTextAlign: "start" }}
-          index={index}
-          open={index >= 0}
-          close={() => setIndex(-1)}
-          slides={images}
-        />
-      </div>
+      <Masonry columns={{ 640: 1, 768: 2, 1024: 3 }} gap={15}>
+        {images.map((image, index) => (
+          <div key={index} onClick={() => setIndex(index)}>
+            <img src={image.src} alt={image.description} />
+          </div>
+        ))}
+      </Masonry>
+      <Lightbox
+        plugins={[Captions]}
+        captions={{ descriptionTextAlign: "start" }}
+        index={index}
+        open={index >= 0}
+        close={() => setIndex(-1)}
+        slides={images}
+      />
     </>
   );
 }

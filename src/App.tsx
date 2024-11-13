@@ -1,14 +1,12 @@
 import "./App.css";
-import Header from "./pages/Header";
-import Routes from "./pages/Routes";
+import Header from "./components/Header";
+import Routes from "./components/Routes";
 
 export default function App() {
   return (
-    <div className="App">
-      <div className="App">
-        <Header />
-        <Routes />
-      </div>
+    <div className="App max-w-6xl mx-auto px-7 mt-3">
+      <Header />
+      <Routes />
     </div>
   );
 }
