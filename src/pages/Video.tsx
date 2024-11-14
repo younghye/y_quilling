@@ -1,14 +1,9 @@
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/captions.css";
-import Lightbox from "yet-another-react-lightbox";
-import Captions from "yet-another-react-lightbox/plugins/captions";
-import VideoPlug from "yet-another-react-lightbox/plugins/video";
 import Masonry from "react-layout-masonry";
 import { videos } from "../components/data";
-import { useState } from "react";
 
 export default function Video() {
-  const [index, setIndex] = useState<number>(-1);
   return (
     <>
       <Masonry
@@ -16,26 +11,12 @@ export default function Video() {
         gap={15}
         className="relative z-0"
       >
-        {videos.map((video, index) => (
-          <div key={index} onClick={() => setIndex(index)}>
-            <video className="h-full w-full rounded-lg" controls>
-              <source src={video.sources[0].src} type={video.sources[0].type} />
-            </video>
-          </div>
+        {videos.map((video) => (
+          <video className="h-full w-full rounded-lg" controls>
+            <source src={video.sources[0].src} type={video.sources[0].type} />
+          </video>
         ))}
       </Masonry>
-      {/* <Lightbox
-        plugins={[VideoPlug]}
-        captions={{ descriptionTextAlign: "start" }}
-        index={index}
-        open={index >= 0}
-        close={() => setIndex(-1)}
-        slides={videos}
-        video={{
-          autoPlay: true,
-          muted: true,
-        }}
-      /> */}
     </>
   );
 }
