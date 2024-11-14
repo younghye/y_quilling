@@ -3,7 +3,7 @@ export const videos = [
     type: "video" as const,
     sources: [
       {
-        src: "./assets/videos/dog1.mp4",
+        src: "./assets/videos/dog1.mp4#t=0.001",
         type: "video/mp4",
       },
     ],
@@ -12,7 +12,7 @@ export const videos = [
     type: "video" as const,
     sources: [
       {
-        src: "./assets/videos/kiwibird.mp4",
+        src: "./assets/videos/kiwibird.mp4#t=0.001",
         type: "video/mp4",
       },
     ],
@@ -21,7 +21,7 @@ export const videos = [
     type: "video" as const,
     sources: [
       {
-        src: "./assets/videos/dog2.mp4",
+        src: "./assets/videos/dog2.mp4#t=0.001",
         type: "video/mp4",
       },
     ],
