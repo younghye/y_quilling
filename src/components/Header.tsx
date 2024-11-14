@@ -71,19 +71,34 @@ export default function Header() {
         flex-col justify-center items-center text-2xl`}
           onClick={() => setMenuToggle(false)}
         >
-          <a href="/home" className="p-2 hover:text-teal-600">
+          <a
+            href={process.env.PUBLIC_URL + "/home"}
+            className="p-2 hover:text-teal-600"
+          >
             Home
           </a>
-          <a href="/about" className="p-2 hover:text-teal-600">
+          <a
+            href={process.env.PUBLIC_URL + "/about"}
+            className="p-2 hover:text-teal-600"
+          >
             About
           </a>
-          <a href="/portfolio" className="p-2 hover:text-teal-600">
+          <a
+            href={process.env.PUBLIC_URL + "/portfolio"}
+            className="p-2 hover:text-teal-600"
+          >
             Portfolio
           </a>
-          <a href="/video" className="p-2 hover:text-teal-600">
+          <a
+            href={process.env.PUBLIC_URL + "/video"}
+            className="p-2 hover:text-teal-600"
+          >
             Video
           </a>
-          <a href="/contact" className="p-2 hover:text-teal-600">
+          <a
+            href={process.env.PUBLIC_URL + "/contact"}
+            className="p-2 hover:text-teal-600"
+          >
             Contact
           </a>
         </div>
