@@ -18,20 +18,24 @@ export default function Video() {
       >
         {videos.map((video, index) => (
           <div key={index} onClick={() => setIndex(index)}>
-            <video className="rounded-lg" controls>
+            <video className="h-full w-full rounded-lg" controls>
               <source src={video.sources[0].src} type={video.sources[0].type} />
             </video>
           </div>
         ))}
       </Masonry>
-      <Lightbox
-        plugins={[Captions, VideoPlug]}
+      {/* <Lightbox
+        plugins={[VideoPlug]}
         captions={{ descriptionTextAlign: "start" }}
         index={index}
         open={index >= 0}
         close={() => setIndex(-1)}
         slides={videos}
-      />
+        video={{
+          autoPlay: true,
+          muted: true,
+        }}
+      /> */}
     </>
   );
 }
