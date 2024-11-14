@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/y_quilling/static/css/main.f4c6ebf4.css",
-    "main.js": "/y_quilling/static/js/main.32aa6fe7.js",
+    "main.js": "/y_quilling/static/js/main.b1cc814f.js",
     "static/js/453.de4ae9b5.chunk.js": "/y_quilling/static/js/453.de4ae9b5.chunk.js",
     "index.html": "/y_quilling/index.html",
     "main.f4c6ebf4.css.map": "/y_quilling/static/css/main.f4c6ebf4.css.map",
-    "main.32aa6fe7.js.map": "/y_quilling/static/js/main.32aa6fe7.js.map",
+    "main.b1cc814f.js.map": "/y_quilling/static/js/main.b1cc814f.js.map",
     "453.de4ae9b5.chunk.js.map": "/y_quilling/static/js/453.de4ae9b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f4c6ebf4.css",
-    "static/js/main.32aa6fe7.js"
+    "static/js/main.b1cc814f.js"
   ]
 }
