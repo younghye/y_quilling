@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 export default function NotFound() {
   return (
     <div className="flex items-center justify-center h-[73vh]">
@@ -9,12 +10,12 @@ export default function NotFound() {
           Sorry, we couldn't find this page.
         </p>
 
-        <a
-          href={"/home"}
+        <Link
+          to="/home"
           className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg px-5 py-2.5 focus:outline-none"
         >
           Back to home
-        </a>
+        </Link>
       </div>
     </div>
   );
