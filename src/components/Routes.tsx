@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes as Switch, Route } from "react-router-dom";
+import { Routes as Switch, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 import Video from "../pages/Video";
@@ -9,19 +9,17 @@ import NotFound from "../pages/NotFound";
 export default function Routes() {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
-        <Switch>
-          <Route>
-            <Route path="/home" index element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/video" element={<Video />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/" element={<Home />} />
-          </Route>
-          <Route path="*" element={<NotFound />} />
-        </Switch>
-      </BrowserRouter>
+      <Switch>
+        <Route>
+          <Route path="/home" index element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/video" element={<Video />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Home />} />
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Switch>
     </>
   );
 }

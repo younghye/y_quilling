@@ -1,4 +1,5 @@
 {
+  "homepage": "https://younghye.github.io/y_quilling",
   "name": "y_quilling",
   "version": "0.1.0",
   "private": true,
@@ -34,7 +35,6 @@
     "predeploy": "npm run build",
     "deploy": "shx cp build/index.html build/404.html && gh-pages -d build"
   },
-  "homepage": "https://younghye.github.io/y_quilling",
   "eslintConfig": {
     "extends": [
       "react-app",
