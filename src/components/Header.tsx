@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaTimes } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 export default function Header() {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -11,29 +10,41 @@ export default function Header() {
         <div className="flex justify-between font-serif py-5 px-3 mb-4">
           <div className="flex items-center">
             <div>
-              <Link to="/home" className="flex mr-24">
+              <a href={process.env.PUBLIC_URL + "/home"} className="flex mr-24">
                 <span className="font-bold text-3xl">Y_Quilling</span>
-              </Link>
+              </a>
             </div>
             <div className="hidden md:flex space-x-5 justify-center w-96 text-xl">
-              <Link to="/home" className="text-gray-700 hover:text-red-900">
+              <a
+                href={process.env.PUBLIC_URL + "/home"}
+                className="text-gray-700 hover:text-red-900"
+              >
                 Home
-              </Link>
-              <Link to="/about" className="text-gray-700 hover:text-red-900">
+              </a>
+              <a
+                href={process.env.PUBLIC_URL + "/about"}
+                className="text-gray-700 hover:text-red-900"
+              >
                 About
-              </Link>
-              <Link
-                to="/portfolio"
+              </a>
+              <a
+                href={process.env.PUBLIC_URL + "/portfolio"}
                 className="text-gray-700 hover:text-red-900"
               >
                 Portfolio
-              </Link>
-              <Link to="/video" className="text-gray-700 hover:text-red-900">
+              </a>
+              <a
+                href={process.env.PUBLIC_URL + "/video"}
+                className="text-gray-700 hover:text-red-900"
+              >
                 Video
-              </Link>
-              <Link to="/contact" className="text-gray-700 hover:text-red-900">
+              </a>
+              <a
+                href={process.env.PUBLIC_URL + "/contact"}
+                className="text-gray-700 hover:text-red-900"
+              >
                 Contact
-              </Link>
+              </a>
             </div>
           </div>
 
