@@ -5,7 +5,7 @@ import { BrowserRouter } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="App max-w-6xl mx-auto px-7 py-4">
+    <div className="App max-w-7xl mx-auto px-7 py-4">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Header />
         <Routes />

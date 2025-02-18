@@ -1,6 +1,6 @@
 export default function NotFound() {
   return (
-    <div className="flex items-center justify-center h-[73vh]">
+    <div className="flex items-center justify-center h-[73vh] font-serif">
       <div className="text-center">
         <h2 className="mb-8 font-extrabold text-8xl md:text-9xl">
           <span>404</span>

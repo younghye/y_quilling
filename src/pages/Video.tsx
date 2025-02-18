@@ -8,7 +8,7 @@ export default function Video() {
     <>
       <Masonry
         columns={{ 640: 1, 768: 2, 1024: 3 }}
-        gap={15}
+        gap={20}
         className="relative z-0"
       >
         {videos.map((video) => (

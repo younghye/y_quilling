@@ -9,8 +9,8 @@ import { useState } from "react";
 export default function Portfolio() {
   const [index, setIndex] = useState<number>(-1);
   return (
-    <>
-      <Masonry columns={{ 640: 1, 768: 2, 1024: 3 }} gap={15}>
+    <div>
+      <Masonry columns={{ 640: 1, 768: 2, 1024: 3 }} gap={20}>
         {images.map((image, index) => (
           <div key={index} onClick={() => setIndex(index)}>
             <img src={image.src} alt={image.description} />
@@ -25,6 +25,6 @@ export default function Portfolio() {
         close={() => setIndex(-1)}
         slides={images}
       />
-    </>
+    </div>
   );
 }
