@@ -6,8 +6,7 @@ export default function Contact() {
       <div className="flex justify-center items-center h-[63vh] font-serif">
         <div className="text-xl leading-loose">
           <div>
-            If you have any inquiries about commissions, projects, or anything
-            else, <br />
+            If you have any inquiries about commissions or anything else, <br />
             feel free to email me at
           </div>
           <div className="text-xl font-bold underline mt-3">

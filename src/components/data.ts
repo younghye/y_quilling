@@ -114,7 +114,6 @@ export const images = [
     title: "",
     description: "",
   },
-
   {
     src: "./assets/images/nzMap5.jpg",
     title: "",
