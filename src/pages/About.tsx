@@ -5,7 +5,7 @@ export default function About() {
         {/* <div> */}
         <img src="./assets/images/me.jpg" alt="myPhoto" />
       </div>
-      <div className="col-span-1 md:col-span-2 flex items-center text-lg text-left p-10">
+      <div className="col-span-1 md:col-span-2 flex items-center text-lg text-left mb-10 md:p-10">
         Hello, My name is Young. <br />
         <br />
         After working as dog groomer and software developer in Korea and Japan,

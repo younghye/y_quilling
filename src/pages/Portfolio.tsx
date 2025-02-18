@@ -10,7 +10,7 @@ export default function Portfolio() {
   const [index, setIndex] = useState<number>(-1);
   return (
     <div>
-      <Masonry columns={{ 640: 1, 768: 2, 1024: 3 }} gap={20}>
+      <Masonry columns={{ 640: 1, 768: 2, 1024: 3 }} gap={20} className="mb-10">
         {images.map((image, index) => (
           <div key={index} onClick={() => setIndex(index)}>
             <img src={image.src} alt={image.description} />

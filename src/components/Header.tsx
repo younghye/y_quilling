@@ -8,7 +8,7 @@ export default function Header() {
   const linkStyle = "text-gray-700 hover:text-red-700";
   const mobileLinkStyle = "p-2 hover:text-red-700";
   return (
-    <nav className="top-0 z-10 font-serif mb-6 ">
+    <nav className="top-0 z-10 font-serif mb-6 relative">
       <div className="flex justify-between py-5 px-3 mb-4">
         <div className="flex items-center w-full">
           <div className=" m-0 p-0">
@@ -38,11 +38,15 @@ export default function Header() {
 
         {/* mobile menu */}
         <div
-          className="md:hidden z-10 flex items-center"
+          className="md:hidden position-absolute top-0 start-100 translate-middle"
           onClick={() => setMenuToggle(!menuToggle)}
         >
           {menuToggle ? (
-            <FaTimes size={40} color="white" />
+            <FaTimes
+              size={40}
+              color="white"
+              className="absolute top-4 end-4 z-10"
+            />
           ) : (
             <RxHamburgerMenu size={40} />
           )}
