@@ -1,5 +1,6 @@
 {
-  "homepage": "https://younghye.github.io/y_quilling",
+  // github pages deploy
+  // "homepage": "https://younghye.github.io/y_quilling",
   "name": "y_quilling",
   "version": "0.1.0",
   "private": true,
@@ -33,7 +34,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "shx cp build/index.html build/404.html && gh-pages -d build"
+    // github pages deploy
+    // "deploy": "shx cp build/index.html build/404.html && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
