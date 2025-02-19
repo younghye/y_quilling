@@ -1,2 +1,2 @@
 # Demo
-https://younghye.github.io/y_quilling/
+https://y-quilling.netlify.app/
