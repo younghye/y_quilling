@@ -40,6 +40,11 @@ export const images = [
     description: "",
   },
   {
+    src: "./assets/images/dreamcatcher.jpg",
+    title: "",
+    description: "",
+  },
+  {
     src: "./assets/images/kiwiBird.jpg",
     title: "",
     description: "",
@@ -50,7 +55,7 @@ export const images = [
     description: "",
   },
   {
-    src: "./assets/images/lineFace.jpg",
+    src: "./assets/images/rainbowFlower.jpg",
     title: "",
     description: "",
   },
@@ -65,7 +70,7 @@ export const images = [
     description: "",
   },
   {
-    src: "./assets/images/rainbowFlower.jpg",
+    src: "./assets/images/lineFace.jpg",
     title: "",
     description: "",
   },
@@ -100,7 +105,7 @@ export const images = [
     description: "",
   },
   {
-    src: "./assets/images/dog2.jpg",
+    src: "./assets/images/dog3.jpg",
     title: "",
     description: "",
   },
@@ -139,8 +144,9 @@ export const images = [
     title: "",
     description: "",
   },
+
   {
-    src: "./assets/images/family.jpg",
+    src: "./assets/images/parrot.jpg",
     title: "",
     description: "",
   },
@@ -149,8 +155,14 @@ export const images = [
     title: "",
     description: "",
   },
+
   {
     src: "./assets/images/nzMap4.jpg",
+    title: "",
+    description: "",
+  },
+  {
+    src: "./assets/images/family.jpg",
     title: "",
     description: "",
   },
@@ -160,22 +172,17 @@ export const images = [
     description: "",
   },
   {
-    src: "./assets/images/parrot.jpg",
-    title: "",
-    description: "",
-  },
-  {
     src: "./assets/images/nzMap10.jpg",
     title: "",
     description: "",
   },
   {
-    src: "./assets/images/dog3.jpg",
+    src: "./assets/images/sunset.jpg",
     title: "",
     description: "",
   },
   {
-    src: "./assets/images/sunset.jpg",
+    src: "./assets/images/dog2.jpg",
     title: "",
     description: "",
   },
